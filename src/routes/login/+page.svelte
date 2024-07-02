@@ -10,11 +10,11 @@
 
 <h1>Welcome to the Login Page</h1>
 
-<form method="post">
+<form method="post" action="?/login">
     {#if error}
         <p>{error}</p>
     {/if}
-    <Textfield type="text" label="Username" bind:value={username} placeholder="Username"></Textfield>
-    <Textfield type="password" label="Password" bind:value={password} placeholder="Password"></Textfield>
-    <Button>Login</Button>
+    <Textfield type="text" label="Username" input$name="username" bind:value={username} placeholder="Username"></Textfield>
+    <Textfield type="password" label="Password" input$name="password" bind:value={password} placeholder="Password"></Textfield>
+    <Button type="submit">Login</Button>
 </form>
