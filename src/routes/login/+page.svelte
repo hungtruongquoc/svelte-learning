@@ -1,6 +1,11 @@
 <!-- src/routes/+page.svelte -->
 <script>
     export let error;
+    import Textfield from '@smui/textfield';
+    import Button from '@smui/button';
+
+    let username = null;
+    let password = null;
 </script>
 
 <h1>Welcome to the Login Page</h1>
@@ -9,7 +14,7 @@
     {#if error}
         <p>{error}</p>
     {/if}
-    <input type="text" name="username" placeholder="Username" required />
-    <input type="password" name="password" placeholder="Password" required />
-    <button type="submit">Login</button>
+    <Textfield type="text" label="Username" bind:value={username} placeholder="Username"></Textfield>
+    <Textfield type="password" label="Password" bind:value={password} placeholder="Password"></Textfield>
+    <Button>Login</Button>
 </form>
