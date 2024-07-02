@@ -3,4 +3,4 @@
     export let data;
 </script>
 
-<h1>Welcome to the Asset List Page</h1>
+<h1>Welcome to the Item Page</h1>
