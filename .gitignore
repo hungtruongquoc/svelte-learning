@@ -84,3 +84,4 @@ fabric.properties
 .svelte-kit/
 package
 .idea
+node_modules
