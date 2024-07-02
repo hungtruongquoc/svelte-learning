@@ -11,3 +11,14 @@
 </script>
 
 <li>{name} <a on:click={handleClick}>View elixirs</a></li>
+
+<style>
+
+    a {
+        display: none;
+    }
+
+    li:hover a {
+        display: inline;
+    }
+</style>
